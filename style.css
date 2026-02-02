@@ -2,9 +2,9 @@
 body {
   margin: 0;
   font-family: "Georgia", serif;
-  background: linear-gradient(to bottom right, #f8e7ec, #fff7f0, #f3e5ff);
+  background: linear-gradient(to bottom right, #0a0f3c, #1a224d, #f7d7c4);
   background-attachment: fixed;
-  color: #4a3b3b;
+  color: #f7d7c4;
 }
 
 /* Navigation */
@@ -13,7 +13,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 25px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(6px);
   position: sticky;
   top: 0;
@@ -23,6 +23,7 @@ body {
 .logo {
   font-size: 22px;
   font-weight: bold;
+  color: #f7d7c4;
 }
 
 .menu-btn {
@@ -30,13 +31,14 @@ body {
   background: none;
   border: none;
   cursor: pointer;
+  color: #f7d7c4;
 }
 
 .menu {
   list-style: none;
   display: none;
   flex-direction: column;
-  background: white;
+  background: #fff;
   padding: 10px;
   border-radius: 8px;
   position: absolute;
@@ -60,34 +62,35 @@ body {
 
 /* Hero Section */
 .hero {
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
   padding: 40px;
-  align-items: center;
 }
 
-.hero-text {
-  max-width: 50%;
+.centered-hero-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.hero-image img {
+.centered-hero-image img {
   width: 350px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
 /* Galleries */
-.gallery {
+.gallery.two-column {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   padding: 20px;
 }
 
 .gallery-card img {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
 
 /* RSVP Form */
@@ -119,5 +122,6 @@ button {
 button:hover {
   background: #9d4f63;
 }
+
 
 
