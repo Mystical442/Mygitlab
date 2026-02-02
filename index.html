@@ -11,7 +11,7 @@
 
   <!-- Navigation Menu -->
   <nav class="navbar">
-    <div class="logo">C & K</div>
+    <div class="logo">C & K 2026</div>
     <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
     <ul id="menuList" class="menu">
@@ -47,7 +47,7 @@
           <div class="and">together with their families</div>
 
           <div class="date-venue">
-            <span><strong>Date:</strong> October 11, 2026</span>
+            <span><strong>Date:</strong> October 10, 2026</span>
             <span><strong>Time:</strong> 12:00 PM</span>
             <span><strong>Venue:</strong> 700 Conference Center Drive, Chesapeake, VA 23320</span>
           </div>
@@ -146,26 +146,32 @@
 
         <form action="https://formsubmit.co/kwaku.impraim@yahoo.com" method="POST" class="rsvp-form">
 
-          <input type="hidden" name="_subject" value="New Wedding RSVP!">
-          <input type="hidden" name="_captcha" value="false">
+  <!-- Required for FormSubmit -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="New Wedding RSVP!">
+  <input type="hidden" name="_honey" style="display:none">
 
-          <label>Name</label>
-          <input type="text" name="name" required>
+  <!-- Optional but recommended -->
+  <input type="hidden" name="_next" value="https://formsubmit.co/thank-you">
 
-          <label>Email</label>
-          <input type="email" name="email" required>
+  <label>Name</label>
+  <input type="text" name="name" required>
 
-          <label>Will you attend?</label>
-          <select name="attendance" required>
-            <option value="Yes">Yes, I will be there</option>
-            <option value="No">Sorry, I can't make it</option>
-          </select>
+  <label>Email</label>
+  <input type="email" name="email" required>
 
-          <label>Message (optional)</label>
-          <textarea name="message" rows="4" placeholder="Please list all guests attending with you."></textarea>
+  <label>Will you attend?</label>
+  <select name="attendance" required>
+    <option value="Yes">Yes, I will be there</option>
+    <option value="No">Sorry, I can't make it</option>
+  </select>
 
-          <button type="submit">Submit RSVP</button>
-        </form>
+  <label>Message (optional)</label>
+  <textarea name="message" rows="4" placeholder="Please list all guests attending with you."></textarea>
+
+  <button type="submit">Submit RSVP</button>
+</form>
+
       </section>
 
     </main>
