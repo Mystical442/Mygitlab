@@ -146,13 +146,12 @@
 
         <form action="https://formsubmit.co/kwaku.impraim@yahoo.com" method="POST" class="rsvp-form">
 
-  <!-- Required for FormSubmit -->
   <input type="hidden" name="_captcha" value="false">
   <input type="hidden" name="_subject" value="New Wedding RSVP!">
   <input type="hidden" name="_honey" style="display:none">
 
-  <!-- Optional but recommended -->
-  <input type="hidden" name="_next" value="https://formsubmit.co/thank-you">
+  <!-- IMPORTANT: Redirect must be a Netlify URL -->
+  <input type="hidden" name="_next" value="https://fastidious-semolina-751260.netlify.app//thankyou.html">
 
   <label>Name</label>
   <input type="text" name="name" required>
@@ -171,6 +170,7 @@
 
   <button type="submit">Submit RSVP</button>
 </form>
+
 
       </section>
 
