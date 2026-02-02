@@ -5,6 +5,16 @@ body {
   background: linear-gradient(to bottom right, #0a0f3c, #1a224d, #f7d7c4);
   background-attachment: fixed;
   color: #f7d7c4;
+  text-align: center;
+}
+
+/* Rose Gold Gradient Text */
+.couple-name {
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(to right, #f7d7c4, #f2b8a0, #f7d7c4);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 /* Navigation */
@@ -62,7 +72,6 @@ body {
 
 /* Hero Section */
 .hero {
-  text-align: center;
   padding: 40px;
 }
 
@@ -91,6 +100,27 @@ body {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+/* Info Sections */
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.info-list li {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: #f7d7c4;
+}
+
+.info-list a {
+  color: #f7d7c4;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /* RSVP Form */
@@ -122,6 +152,7 @@ button {
 button:hover {
   background: #9d4f63;
 }
+
 
 
 
