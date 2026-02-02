@@ -1,7 +1,7 @@
 /* Color Theme */
 :root {
-  --primary: #b76e79;      /* rose gold */
-  --secondary: #f7e7e8;    /* blush */
+  --primary: #b76e79;
+  --secondary: #f7e7e8;
   --accent: #8d6e63;
   --text-dark: #3e2723;
   --text-light: #795548;
@@ -202,3 +202,4 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
