@@ -9,9 +9,15 @@
 
 <body>
 
+  <!-- Thin Kente Top Border -->
+  <div class="kente-border kente-top"></div>
+
   <!-- Navigation Menu -->
   <nav class="navbar">
-    <div class="logo">C & K 2026</div>
+    <div class="logo">
+      C & K 2026
+      <img src="Ring.png" alt="Wedding Ring" class="ring-icon">
+    </div>
     <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
     <ul id="menuList" class="menu">
@@ -24,7 +30,7 @@
 
   <!-- Background Music -->
   <audio autoplay loop controls class="music-player">
-    <source src="music/wedding-song.mpmp3" type="audio/mpeg">
+    <source src="music/wedding-song.mp3" type="audio/mpeg">
   </audio>
 
   <div class="page-wrapper fade-in" id="home">
@@ -38,7 +44,7 @@
 
     <main>
 
-      <!-- Hero Section -->
+      <!-- Hero Section with Slideshow -->
       <section class="hero slide-up">
         <div class="hero-text">
           <p>You are warmly invited to the Traditional wedding of</p>
@@ -58,7 +64,13 @@
         </div>
 
         <div class="hero-image centered-hero-image">
-          <img src="IMG_3689.jpeg" alt="Charity and Kwaku" />
+          <div class="slideshow">
+            <img src="couple1.jpeg" alt="Couple 1" class="slide slide1">
+            <img src="couple2.jpeg" alt="Couple 2" class="slide slide2">
+            <img src="couple3.jpeg" alt="Couple 3" class="slide slide3">
+            <img src="couple4.jpeg" alt="Couple 4" class="slide slide4">
+            <img src="couple5.jpeg" alt="Couple 5" class="slide slide5">
+          </div>
         </div>
       </section>
 
@@ -84,29 +96,137 @@
         </div>
       </section>
 
-      <!-- Bridesmaids Gallery -->
+      <!-- Bridesmaids Gallery (Flip Cards) -->
       <section id="bridesmaids" class="slide-up">
         <h3>Bride & Friends</h3>
 
         <div class="gallery two-column">
-          <div class="gallery-card"><img src="images/bridesmaid1.jpg"><p>Bridesmaid 1</p></div>
-          <div class="gallery-card"><img src="images/bridesmaid2.jpg"><p>Bridesmaid 2</p></div>
-          <div class="gallery-card"><img src="images/bridesmaid3.jpg"><p>Bridesmaid 3</p></div>
-          <div class="gallery-card"><img src="images/bridesmaid4.jpg"><p>Bridesmaid 4</p></div>
-          <div class="gallery-card"><img src="images/bridesmaid5.jpg"><p>Bridesmaid 5</p></div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/bridesmaid1.jpg" alt="Bridesmaid 1">
+              </div>
+              <div class="flip-card-back">
+                <h4>Bridesmaid 1</h4>
+                <p>Best friend and sister in spirit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/bridesmaid2.jpg" alt="Bridesmaid 2">
+              </div>
+              <div class="flip-card-back">
+                <h4>Bridesmaid 2</h4>
+                <p>Always there with a smile and support.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/bridesmaid3.jpg" alt="Bridesmaid 3">
+              </div>
+              <div class="flip-card-back">
+                <h4>Bridesmaid 3</h4>
+                <p>Childhood friend and confidante.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/bridesmaid4.jpg" alt="Bridesmaid 4">
+              </div>
+              <div class="flip-card-back">
+                <h4>Bridesmaid 4</h4>
+                <p>Bringing joy and laughter to every moment.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/bridesmaid5.jpg" alt="Bridesmaid 5">
+              </div>
+              <div class="flip-card-back">
+                <h4>Bridesmaid 5</h4>
+                <p>A true sister and trusted friend.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- Groomsmen Gallery -->
+      <!-- Groomsmen Gallery (Flip Cards) -->
       <section id="groomsmen" class="slide-up">
         <h3>Groom & Friends</h3>
 
         <div class="gallery two-column">
-          <div class="gallery-card"><img src="images/groomsman1.jpg"><p>Groomsman 1</p></div>
-          <div class="gallery-card"><img src="images/groomsman2.jpg"><p>Groomsman 2</p></div>
-          <div class="gallery-card"><img src="images/groomsman3.jpg"><p>Groomsman 3</p></div>
-          <div class="gallery-card"><img src="images/groomsman4.jpg"><p>Groomsman 4</p></div>
-          <div class="gallery-card"><img src="images/groomsman5.jpg"><p>Groomsman 5</p></div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/groomsman1.jpg" alt="Groomsman 1">
+              </div>
+              <div class="flip-card-back">
+                <h4>Groomsman 1</h4>
+                <p>Brother in every way that matters.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/groomsman2.jpg" alt="Groomsman 2">
+              </div>
+              <div class="flip-card-back">
+                <h4>Groomsman 2</h4>
+                <p>Always ready with wisdom and humor.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/groomsman3.jpg" alt="Groomsman 3">
+              </div>
+              <div class="flip-card-back">
+                <h4>Groomsman 3</h4>
+                <p>Friend through every season of life.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/groomsman4.jpg" alt="Groomsman 4">
+              </div>
+              <div class="flip-card-back">
+                <h4>Groomsman 4</h4>
+                <p>Bringing energy and loyalty to the day.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/groomsman5.jpg" alt="Groomsman 5">
+              </div>
+              <div class="flip-card-back">
+                <h4>Groomsman 5</h4>
+                <p>A steadfast friend and brother.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -144,30 +264,27 @@
       <section id="rsvp" class="slide-up">
         <h3>RSVP</h3>
 
-        <form action="https://formsubmit.co/Kwaku.impraim@yahoo.com" method="POST" class="rsvp-form">
+        <form action="https://formsubmit.co/kwaku.impraim@yahoo.com" method="POST" class="rsvp-form">
+          <input type="hidden" name="_subject" value="New Wedding RSVP!">
+          <input type="hidden" name="_captcha" value="false">
 
-  <input type="hidden" name="_subject" value="New Wedding RSVP!">
-  <input type="hidden" name="_captcha" value="false">
+          <label>Name</label>
+          <input type="text" name="name" required>
 
-  <label>Name</label>
-  <input type="text" name="name" required>
+          <label>Email</label>
+          <input type="email" name="email" required>
 
-  <label>Email</label>
-  <input type="email" name="email" required>
+          <label>Will you attend?</label>
+          <select name="attendance" required>
+            <option value="Yes">Yes, I will be there</option>
+            <option value="No">Sorry, I can't make it</option>
+          </select>
 
-  <label>Will you attend?</label>
-  <select name="attendance" required>
-    <option value="Yes">Yes, I will be there</option>
-    <option value="No">Sorry, I can't make it</option>
-  </select>
+          <label>Message (optional)</label>
+          <textarea name="message" rows="4" placeholder="Please list all guests attending with you."></textarea>
 
-  <label>Message (optional)</label>
-  <textarea name="message" rows="4"></textarea>
-
-  <button type="submit">Submit RSVP</button>
-</form>
-
-
+          <button type="submit">Submit RSVP</button>
+        </form>
       </section>
 
     </main>
@@ -178,6 +295,9 @@
     </footer>
 
   </div>
+
+  <!-- Thin Kente Bottom Border -->
+  <div class="kente-border kente-bottom"></div>
 
   <!-- Countdown Script -->
   <script>
@@ -203,6 +323,7 @@
 
 </body>
 </html>
+
 
 
 </body>
