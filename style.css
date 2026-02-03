@@ -110,20 +110,25 @@ body {
   margin: 0 auto 30px auto;
 }
 
-/* Responsive Portrait Slideshow */
+/* FIXED RESPONSIVE PORTRAIT SLIDESHOW */
 .slideshow {
   position: relative;
   width: 100%;
   max-width: 450px;
-  aspect-ratio: 3 / 4; /* responsive portrait */
   margin: 0 auto;
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+
+  /* NEW: replaces aspect-ratio (Netlify-safe) */
+  height: auto;
+  padding-top: 133%; /* 4:3 portrait ratio */
 }
 
 .slideshow .slide {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -299,6 +304,7 @@ footer {
     max-width: 350px;
   }
 }
+
 
 
 
