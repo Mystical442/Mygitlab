@@ -110,7 +110,7 @@ body {
   margin: 0 auto 30px auto;
 }
 
-/* FIXED RESPONSIVE PORTRAIT SLIDESHOW */
+/* Responsive Auto‑Height Slideshow */
 .slideshow {
   position: relative;
   width: 100%;
@@ -119,25 +119,28 @@ body {
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-
-  /* NEW: replaces aspect-ratio (Netlify-safe) */
-  height: auto;
-  padding-top: 133%; /* 4:3 portrait ratio */
 }
 
+/* Each slide takes the natural height of the image */
 .slideshow .slide {
+  width: 100%;
+  height: auto;              /* auto height based on image */
+  display: block;
+  object-fit: cover;         /* fills width nicely */
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background-color: transparent;
-  opacity: 0;
   animation: fadeSlide 25s infinite;
 }
 
-.slide1 { animation-delay: 0s; }
+/* Make the first slide visible initially */
+.slide1 {
+  position: relative;
+  opacity: 1;
+  animation-delay: 0s;
+}
+
 .slide2 { animation-delay: 5s; }
 .slide3 { animation-delay: 10s; }
 .slide4 { animation-delay: 15s; }
