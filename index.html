@@ -1,159 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Charity & Kwaku - Traditional Wedding</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Charity & Kwaku — Traditional Wedding Invitation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <!-- Kente Top Border -->
+
+  <!-- Thin Kente Top Border -->
   <div class="kente-border kente-top"></div>
 
-  <!-- Navbar -->
-  <header class="navbar">
+  <!-- Navigation Menu -->
+  <nav class="navbar">
     <div class="logo">
-      <img src="Ring.png" alt="Rings" class="ring-icon">
-      <span>Charity &amp; Kwaku</span>
+      C & K 2026
+      <img src="Ring.png" alt="Wedding Ring" class="ring-icon">
     </div>
-    <button class="menu-btn" onclick="document.querySelector('.menu').classList.toggle('show')">
-      ☰
-    </button>
-    <ul class="menu">
-      <li><a href="#invitation">Invitation</a></li>
-      <li><a href="#countdown">Countdown</a></li>
-      <li><a href="#story">Our Story</a></li>
-      <li><a href="#rsvp">RSVP</a></li>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <ul id="menuList" class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#stay">Where to Stay</a></li>
+      <li><a href="#gifting">Gifting</a></li>
+      <li><a href="#registry">Registry</a></li>
     </ul>
-  </header>
+  </nav>
 
-  <!-- Hero / Invitation -->
-  <section id="invitation" class="hero slide-up">
-    <div class="centered-hero-text">
-      <h1 class="couple-name">Charity &amp; Kwaku</h1>
+  <!-- Background Music -->
+  <audio autoplay loop controls class="music-player">
+    <source src="music/wedding-song.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="page-wrapper fade-in" id="home">
+
+    <!-- Header -->
+    <header class="slide-up">
+      <h1 class="couple-name">Charity & Kwaku</h1>
       <h2>Traditional Wedding Invitation</h2>
+      <div class="divider"></div>
+    </header>
 
-      <p>You are warmly invited to the Traditional wedding of</p>
-      <p><strong>Charity Asiedu &amp; Kwaku Impraim</strong><br>together with their families</p>
+    <main>
 
-      <div class="event-details">
-        <span><strong>Date:</strong> October 10, 2026</span>
-        <span><strong>Time:</strong> 12:00 PM</span>
-        <span><strong>Venue:</strong> 700 Conference Center Drive, Chesapeake, VA 23320</span>
-      </div>
+      <!-- Hero Section with Centered Text + Slideshow -->
+      <section class="hero slide-up">
 
-      <p class="invite-text">
-        We would be honored to have you share in our joy as we exchange vows and begin our new life together.
-      </p>
-    </div>
+        <div class="hero-text centered-hero-text">
+          <p>You are warmly invited to the Traditional wedding of</p>
 
-    <div class="hero-image centered-hero-image">
-      <div class="slideshow">
-        <!-- You can add more slides later; this one exists in your repo -->
-        <img src="IMG_3689.jpeg" class="slide slide1" alt="Charity and Kwaku">
-      </div>
-    </div>
-  </section>
+          <div class="names">Charity Asiedu &amp; Kwaku Impraim</div>
+          <div class="and">together with their families</div>
 
-  <!-- Countdown -->
-  <section id="countdown" class="countdown-section slide-up">
-    <h3>Countdown to Our Big Day</h3>
-    <div id="countdown-timer"></div>
-  </section>
-
-  <!-- Our Story -->
-  <section id="story" class="story-section slide-up">
-    <h3>Our Story</h3>
-    <p>
-      Charity and Kwaku’s journey began with a simple spark — a moment that grew into something deep,
-      steady, and beautifully unshakeable.
-    </p>
-    <p>
-      Through the highs, the lows, and countless memories, they’ve chosen each other again and again.
-      Now, surrounded by the people they cherish most, they are ready to begin the next chapter of their lives together.
-    </p>
-    <p>
-      Thank you for being part of their story. Your presence on this special day means the world.
-    </p>
-  </section>
-
-  <!-- Simple Gallery / Flip Cards placeholder -->
-  <section class="gallery-section slide-up">
-    <h3>Bride &amp; Friends</h3>
-    <div class="gallery two-column">
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="IMG_3689.jpeg" alt="Bride">
+          <div class="date-venue">
+            <span><strong>Date:</strong> October 10, 2026</span>
+            <span><strong>Time:</strong> 12:00 PM</span>
+            <span><strong>Venue:</strong> 700 Conference Center Drive, Chesapeake, VA 23320</span>
           </div>
-          <div class="flip-card-back">
-            <h4>Bride</h4>
-            <p>Graceful, kind, and full of joy.</p>
+
+          <p class="invite-text">
+            We would be honored to have you share in our joy as we exchange vows and begin our new life together.
+          </p>
+        </div>
+
+        <div class="hero-image centered-hero-image">
+          <div class="slideshow">
+            <img src="couple1.jpeg" class="slide slide1">
+            <img src="couple2.jpeg" class="slide slide2">
+            <img src="couple3.jpeg" class="slide slide3">
+            <img src="couple4.jpeg" class="slide slide4">
+            <img src="couple5.jpeg" class="slide slide5">
           </div>
         </div>
-      </div>
 
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="IMG_3689.jpeg" alt="Groom">
-          </div>
-          <div class="flip-card-back">
-            <h4>Groom</h4>
-            <p>Steady, thoughtful, and deeply loving.</p>
-          </div>
+      </section>
+
+      <!-- Countdown -->
+      <section class="countdown-section slide-up">
+        <h3>Countdown to Our Big Day</h3>
+        <div id="countdown"></div>
+      </section>
+
+      <!-- Story Section -->
+      <section id="story" class="slide-up">
+        <h3>Our Story</h3>
+        <div class="story">
+          <p>
+            Charity and Kwaku’s journey began with a simple spark — a moment that grew into something deep, steady, and beautifully unshakeable.
+          </p>
+          <p>
+            Through laughter, challenges, and countless memories, they’ve chosen each other again and again. Now, surrounded by the people they cherish most, they are ready to begin the next chapter of their lives.
+          </p>
+          <p>
+            Thank you for being part of their story. Your presence on this special day means the world.
+          </p>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- RSVP -->
-  <section id="rsvp" class="rsvp-section slide-up">
-    <h3>RSVP</h3>
-    <form class="rsvp-form" action="#" method="post">
-      <input type="text" name="name" placeholder="Your Full Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <select name="attendance" required>
-        <option value="">Will you attend?</option>
-        <option value="yes">Yes, I will be there</option>
-        <option value="no">Sorry, I cannot attend</option>
-      </select>
-      <textarea name="message" rows="4" placeholder="Leave a message or note"></textarea>
-      <button type="submit">Submit RSVP</button>
-    </form>
-  </section>
+      <!-- Bridesmaids Flip Cards -->
+      <section id="bridesmaids" class="slide-up">
+        <h3>Bride & Friends</h3>
 
-  <!-- Kente Bottom Border -->
+        <div class="gallery two-column">
+
+          <!-- Repeatable Flip Card -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/bridesmaid1.jpg">
+              </div>
+              <div class="flip-card-back">
+                <h4>Bridesmaid 1</h4>
+                <p>Best friend and sister in spirit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/bridesmaid2.jpg">
+              </div>
+              <div class="flip-card-back">
+                <h4>Bridesmaid 2</h4>
+                <p>Always there with a smile and support.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/bridesmaid3.jpg">
+              </div>
+              <div class="flip-card-back">
+                <h4>Bridesmaid 3</h4>
+                <p>Childhood friend and confidante.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/bridesmaid4.jpg">
+              </div>
+              <div class="flip-card-back">
+                <h4>Bridesmaid 4</h4>
+                <p>Bringing joy and laughter to every moment.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/bridesmaid5.jpg">
+              </div>
+              <div class="flip-card-back">
+                <h4>Bridesmaid 5</h4>
+                <p>A true sister and trusted friend.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Groomsmen Flip Cards -->
+      <section id="groomsmen" class="slide-up">
+        <h3>Groom & Friends</h3>
+
+        <div class="gallery two-column">
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/groomsman1.jpg">
+              </div>
+              <div class="flip-card-back">
+                <h4>Groomsman 1</h4>
+                <p>Brother in every way that matters.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/groomsman2.jpg">
+              </div>
+              <div class="flip-card-back">
+                <h4>Groomsman 2</h4>
+                <p>Always ready with wisdom and humor.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/groomsman3.jpg">
+              </div>
+              <div class="flip-card-back">
+                <h4>Groomsman 3</h4>
+                <p>Friend through every season of life.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/groomsman4.jpg">
+              </div>
+              <div class="flip-card-back">
+                <h4>Groomsman 4</h4>
+                <p>Bringing energy and loyalty to the day.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/groomsman5.jpg">
+              </div>
+              <div class="flip-card-back">
+                <h4>Groomsman 5</h4>
+                <p>A steadfast friend and brother.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Where to Stay -->
+      <section id="stay" class="slide-up">
+        <h3>Where to Stay</h3>
+        <ul class="info-list">
+          <li>Delta Hotels by Marriott Chesapeake — 0.5 miles away</li>
+          <li>Hilton Garden Inn Chesapeake — 1 mile away</li>
+          <li>Courtyard by Marriott Chesapeake — 1.2 miles away</li>
+        </ul>
+      </section>
+
+      <!-- Gifting -->
+      <section id="gifting" class="slide-up">
+        <h3>Gifting</h3>
+        <ul class="info-list">
+          <li>Cash gifts are welcome at the event.</li>
+          <li>Zelle: <strong>kwaku.impraim@yahoo.com</strong></li>
+          <li>CashApp: <strong>$YourCashAppName</strong></li>
+        </ul>
+      </section>
+
+      <!-- Registry -->
+      <section id="registry" class="slide-up">
+        <h3>Registry</h3>
+        <ul class="info-list">
+          <li><a href="https://www.amazon.com" target="_blank">Amazon Registry</a></li>
+          <li><a href="https://www.target.com" target="_blank">Target Registry</a></li>
+          <li><a href="https://www.walmart.com" target="_blank">Walmart Registry</a></li>
+        </ul>
+      </section>
+
+      <!-- RSVP Form -->
+      <section id="rsvp" class="slide-up">
+        <h3>RSVP</h3>
+
+        <form action="https://formsubmit.co/kwaku.impraim@yahoo.com" method="POST" class="rsvp-form">
+          <input type="hidden" name="_subject" value="New Wedding RSVP!">
+          <input type="hidden" name="_captcha" value="false">
+
+          <label>Name</label>
+          <input type="text" name="name" required>
+
+          <label>Email</label>
+          <input type="email" name="email" required>
+
+          <label>Will you attend?</label>
+          <select name="attendance" required>
+            <option value="Yes">Yes, I will be there</option>
+            <option value="No">Sorry, I can't make it</option>
+          </select>
+
+          <label>Message (optional)</label>
+          <textarea name="message" rows="4" placeholder="Please list all guests attending with you."></textarea>
+
+          <button type="submit">Submit RSVP</button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="slide-up">
+      <p class="closing">“And so, together, they built a life they loved.”</p>
+      <p>We can’t wait to celebrate with you.</p>
+    </footer>
+
+  </div>
+
+  <!-- Thin Kente Bottom Border -->
   <div class="kente-border kente-bottom"></div>
-
-  <!-- Footer -->
-  <footer>
-    With love, Charity &amp; Kwaku
-  </footer>
 
   <!-- Countdown Script -->
   <script>
-    (function () {
-      const targetDate = new Date("2026-10-10T12:00:00");
-      const el = document.getElementById("countdown-timer");
+    const weddingDate = new Date("October 11, 2026 12:00:00").getTime();
 
-      function updateCountdown() {
-        const now = new Date();
-        const diff = targetDate - now;
-        if (diff <= 0) {
-          el.textContent = "Today is the big day!";
-          return;
-        }
-        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-        const minutes = Math.floor((diff / (1000 * 60)) % 60);
-        const seconds = Math.floor((diff / 1000) % 60);
-        el.textContent = days + " days • " + hours + " hrs • " + minutes + " min • " + seconds + " sec";
-      }
+    setInterval(() => {
+      const now = new Date().getTime();
+      const diff = weddingDate - now;
 
-      updateCountdown();
-      setInterval(updateCountdown, 1000);
-    })();
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML =
+        `${days} days • ${hours} hrs • ${minutes} min • ${seconds} sec`;
+    }, 1000);
+
+    function toggleMenu() {
+      document.getElementById("menuList").classList.toggle("show");
+    }
   </script>
+
 </body>
 </html>
+
