@@ -12,23 +12,30 @@
 <div class="page-frame">
 
   <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="logo">
-      <span class="logo-text">C & K 2026</span>
-      <img src="Ring.png" class="logo-ring" alt="Wedding Ring">
-    </div>
+<header class="navbar">
+  <div class="logo">
+    <span class="logo-text">C & K 2026</span>
+    <img src="Ring.png" class="logo-ring" alt="">
+  </div>
 
-    <nav class="nav-links">
-      <button class="menu-btn" onclick="document.querySelector('.dropdown-menu').classList.toggle('show')">☰</button>
-      <ul class="dropdown-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#stay">Where to Stay</a></li>
-        <li><a href="#gifting">Gifting</a></li>
-        <li><a href="#registry">Registry</a></li>
-        <li><a href="#rsvp">RSVP</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="nav-links">
+    <button class="menu-btn" id="menuToggle">☰</button>
+
+    <ul class="dropdown-menu" id="mobileMenu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#stay">Where to Stay</a></li>
+      <li><a href="#gifting">Gifting</a></li>
+      <li><a href="#registry">Registry</a></li>
+      <li><a href="#rsvp">RSVP</a></li>
+    </ul>
+  </nav>
+</header>
+
+<script>
+  document.getElementById("menuToggle").onclick = function () {
+    document.getElementById("mobileMenu").classList.toggle("show");
+  };
+</script>
 
   <!-- HERO -->
   <section id="home" class="hero fade-in">
