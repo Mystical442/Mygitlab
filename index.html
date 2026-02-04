@@ -2,271 +2,225 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Charity & Kwaku - Traditional Wedding</title>
+  <title>Charity & Kwaku – Traditional Wedding</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="page-frame">
-    <!-- Kente Top Border -->
-    <div class="kente-border kente-top"></div>
 
-    <!-- NAVBAR -->
-    <header class="navbar">
-      <div class="logo">
-        <span class="logo-text">C &amp; K 2026</span>
-        <img src="Ring.png" class="logo-ring" alt="Wedding Ring">
-      </div>
+<div class="page-frame">
 
-      <div class="nav-right">
-        <button class="menu-btn" onclick="document.querySelector('.menu').classList.toggle('show')">
-          ☰
-        </button>
-        <ul class="menu">
-          <li><a href="#home">Home</a></li>
-          <li class="dropdown">
-            <button class="dropdown-toggle">More ▾</button>
-            <ul class="dropdown-menu">
-              <li><a href="#stay">Where to Stay</a></li>
-              <li><a href="#gifting">Gifting</a></li>
-              <li><a href="#registry">Registry</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </header>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-text">C & K 2026</span>
+      <img src="Ring.png" class="logo-ring" alt="Wedding Ring">
+    </div>
 
-    <!-- HERO SECTION -->
-    <main id="home">
-      <section class="hero">
-        <h1 class="couple-name">Charity &amp; Kwaku</h1>
-        <h2 class="subtitle">Traditional Wedding Invitation</h2>
+    <nav class="nav-links">
+      <button class="menu-btn" onclick="document.querySelector('.dropdown-menu').classList.toggle('show')">☰</button>
+      <ul class="dropdown-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#stay">Where to Stay</a></li>
+        <li><a href="#gifting">Gifting</a></li>
+        <li><a href="#registry">Registry</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <p>You are warmly invited to the Traditional wedding of</p>
-        <p><strong>Charity Asiedu &amp; Kwaku Impraim</strong></p>
+  <!-- HERO -->
+  <section id="home" class="hero fade-in">
+    <h1 class="couple-name">Charity & Kwaku</h1>
+    <h2 class="subtitle">Traditional Wedding Invitation</h2>
 
-        <div class="event-details">
-          <span><strong>Date:</strong> October 10, 2026</span>
-          <span><strong>Time:</strong> 12:00 PM</span>
-          <span><strong>Venue:</strong> 700 Conference Center Drive, Chesapeake, VA 23320</span>
-        </div>
+    <p>You are warmly invited to the Traditional wedding of</p>
+    <p><strong>Charity Asiedu & Kwaku Impraim</strong></p>
 
-        <p class="invite-text">
-          We would be honored to have you share in our joy as we exchange vows and begin our new life together.
-        </p>
+    <div class="event-details">
+      <span><strong>Date:</strong> October 10, 2026</span>
+      <span><strong>Time:</strong> 12:00 PM</span>
+      <span><strong>Venue:</strong> 700 Conference Center Drive, Chesapeake, VA 23320</span>
+    </div>
 
-        <!-- FADE-IN SLIDESHOW -->
-        <div class="slideshow">
-          <img src="slide1.jpg" class="slide slide1" alt="Couple 1">
-          <img src="slide2.jpg" class="slide slide2" alt="Couple 2">
-          <img src="slide3.jpg" class="slide slide3" alt="Couple 3">
-          <img src="slide4.jpg" class="slide slide4" alt="Couple 4">
-        </div>
-      </section>
+    <p class="invite-text">
+      We would be honored to have you share in our joy as we exchange vows and begin our new life together.
+    </p>
 
-      <!-- COUNTDOWN -->
-      <section class="section-block" id="countdown-section">
-        <h3>Countdown to Our Big Day</h3>
-        <div id="countdown"></div>
-      </section>
+    <!-- 4-IMAGE COLLAGE -->
+    <div class="image-collage">
+      <img src="collage1.jpg" alt="Collage 1">
+      <img src="collage2.jpg" alt="Collage 2">
+      <img src="collage3.jpg" alt="Collage 3">
+      <img src="collage4.jpg" alt="Collage 4">
+    </div>
+  </section>
 
-      <!-- OUR STORY -->
-      <section class="section-block" id="story">
-        <h3>Our Story</h3>
-        <p>
-          Charity and Kwaku’s journey began with a simple spark — a moment that grew into something deep,
-          steady, and beautifully unshakeable.
-        </p>
-        <p>
-          Through the highs, the lows, and countless memories, they’ve chosen each other again and again.
-          Surrounded by the people they cherish most, they are ready to begin the next chapter of their lives together.
-        </p>
-      </section>
+  <!-- COUNTDOWN -->
+  <section class="section-block">
+    <h3>Countdown to Our Big Day</h3>
+    <div id="countdown"></div>
+  </section>
 
-      <!-- BRIDE & FRIENDS / GROOM & FRIENDS -->
-      <section class="section-block" id="friends">
-        <h3>Bride &amp; Friends</h3>
-        <div class="card-grid">
-          <!-- 5 Bridesmaids -->
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="bride1.jpg" alt="Bridesmaid 1">
-              </div>
-              <div class="flip-card-back">
-                <h4>Bridesmaid 1</h4>
-                <p>Best friend since childhood, always by her side.</p>
-              </div>
-            </div>
-          </div>
+  <!-- OUR STORY -->
+  <section class="section-block">
+    <h3>Our Story</h3>
+    <p>
+      Charity and Kwaku’s journey began with a simple spark — a moment that grew into something deep,
+      steady, and beautifully unshakeable.
+    </p>
+    <p>
+      Through the highs, the lows, and countless memories, they’ve chosen each other again and again.
+      Surrounded by the people they cherish most, they are ready to begin the next chapter of their lives together.
+    </p>
+  </section>
 
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="bride2.jpg" alt="Bridesmaid 2">
-              </div>
-              <div class="flip-card-back">
-                <h4>Bridesmaid 2</h4>
-                <p>Brings laughter and light to every room.</p>
-              </div>
-            </div>
-          </div>
+  <!-- BRIDE & FRIENDS -->
+  <section class="section-block">
+    <h3>Bride & Friends</h3>
+    <div class="card-grid">
+      <div class="flip-card"><div class="flip-card-inner">
+        <div class="flip-card-front"><img src="bride1.jpg" alt="Bridesmaid 1"></div>
+        <div class="flip-card-back"><h4>Bridesmaid 1</h4><p>Her closest friend.</p></div>
+      </div></div>
 
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="bride3.jpg" alt="Bridesmaid 3">
-              </div>
-              <div class="flip-card-back">
-                <h4>Bridesmaid 3</h4>
-                <p>A steady, calming presence and loyal friend.</p>
-              </div>
-            </div>
-          </div>
+      <div class="flip-card"><div class="flip-card-inner">
+        <div class="flip-card-front"><img src="bride2.jpg" alt="Bridesmaid 2"></div>
+        <div class="flip-card-back"><h4>Bridesmaid 2</h4><p>Always supportive.</p></div>
+      </div></div>
 
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="bride4.jpg" alt="Bridesmaid 4">
-              </div>
-              <div class="flip-card-back">
-                <h4>Bridesmaid 4</h4>
-                <p>Always ready with a warm hug and support.</p>
-              </div>
-            </div>
-          </div>
+      <div class="flip-card"><div class="flip-card-inner">
+        <div class="flip-card-front"><img src="bride3.jpg" alt="Bridesmaid 3"></div>
+        <div class="flip-card-back"><h4>Bridesmaid 3</h4><p>Full of joy.</p></div>
+      </div></div>
 
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="bride5.jpg" alt="Bridesmaid 5">
-              </div>
-              <div class="flip-card-back">
-                <h4>Bridesmaid 5</h4>
-                <p>Her creative soul and joyful spirit shine bright.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="flip-card"><div class="flip-card-inner">
+        <div class="flip-card-front"><img src="bride4.jpg" alt="Bridesmaid 4"></div>
+        <div class="flip-card-back"><h4>Bridesmaid 4</h4><p>Always smiling.</p></div>
+      </div></div>
 
-        <h3>Groom &amp; Friends</h3>
-        <div class="card-grid">
-          <!-- 5 Groomsmen -->
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="groom1.jpg" alt="Groomsman 1">
-              </div>
-              <div class="flip-card-back">
-                <h4>Groomsman 1</h4>
-                <p>Brother in spirit, always has his back.</p>
-              </div>
-            </div>
-          </div>
+      <div class="flip-card"><div class="flip-card-inner">
+        <div class="flip-card-front"><img src="bride5.jpg" alt="Bridesmaid 5"></div>
+        <div class="flip-card-back"><h4>Bridesmaid 5</h4><p>Creative soul.</p></div>
+      </div></div>
+    </div>
+  </section>
 
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="groom2.jpg" alt="Groomsman 2">
-              </div>
-              <div class="flip-card-back">
-                <h4>Groomsman 2</h4>
-                <p>The planner, the fixer, the steady hand.</p>
-              </div>
-            </div>
-          </div>
+  <!-- GROOM & FRIENDS -->
+  <section class="section-block">
+    <h3>Groom & Friends</h3>
+    <div class="card-grid">
+      <div class="flip-card"><div class="flip-card-inner">
+        <div class="flip-card-front"><img src="groom1.jpg" alt="Groomsman 1"></div>
+        <div class="flip-card-back"><h4>Groomsman 1</h4><p>Loyal friend.</p></div>
+      </div></div>
 
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="groom3.jpg" alt="Groomsman 3">
-              </div>
-              <div class="flip-card-back">
-                <h4>Groomsman 3</h4>
-                <p>Always brings the energy and the jokes.</p>
-              </div>
-            </div>
-          </div>
+      <div class="flip-card"><div class="flip-card-inner">
+        <div class="flip-card-front"><img src="groom2.jpg" alt="Groomsman 2"></div>
+        <div class="flip-card-back"><h4>Groomsman 2</h4><p>Always helpful.</p></div>
+      </div></div>
 
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="groom4.jpg" alt="Groomsman 4">
-              </div>
-              <div class="flip-card-back">
-                <h4>Groomsman 4</h4>
-                <p>Quiet strength, loyal and dependable.</p>
-              </div>
-            </div>
-          </div>
+      <div class="flip-card"><div class="flip-card-inner">
+        <div class="flip-card-front"><img src="groom3.jpg" alt="Groomsman 3"></div>
+        <div class="flip-card-back"><h4>Groomsman 3</h4><p>Brings energy.</p></div>
+      </div></div>
 
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="groom5.jpg" alt="Groomsman 5">
-              </div>
-              <div class="flip-card-back">
-                <h4>Groomsman 5</h4>
-                <p>Always ready to celebrate every milestone.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div class="flip-card"><div class="flip-card-inner">
+        <div class="flip-card-front"><img src="groom4.jpg" alt="Groomsman 4"></div>
+        <div class="flip-card-back"><h4>Groomsman 4</h4><p>Quiet strength.</p></div>
+      </div></div>
 
-      <!-- WHERE TO STAY / GIFTING / REGISTRY -->
-      <section class="section-block" id="stay">
-        <h3>Where to Stay</h3>
-        <p>Nearby hotels and accommodations will be listed here for your convenience.</p>
-      </section>
+      <div class="flip-card"><div class="flip-card-inner">
+        <div class="flip-card-front"><img src="groom5.jpg" alt="Groomsman 5"></div>
+        <div class="flip-card-back"><h4>Groomsman 5</h4><p>Always cheerful.</p></div>
+      </div></div>
+    </div>
+  </section>
 
-      <section class="section-block" id="gifting">
-        <h3>Gifting</h3>
-        <p>Your presence is the greatest gift. If you wish to bless us further, details will be shared here.</p>
-      </section>
+  <!-- WHERE TO STAY -->
+  <section id="stay" class="section-block">
+    <h3>Where to Stay</h3>
+    <p>Nearby hotel recommendations will be added here for your convenience.</p>
+  </section>
 
-      <section class="section-block" id="registry">
-        <h3>Registry</h3>
-        <p>Links to our registry will be added here so you can easily find items we’ve selected.</p>
-      </section>
-    </main>
+  <!-- GIFTING -->
+  <section id="gifting" class="section-block">
+    <h3>Gifting</h3>
+    <p>Your presence is the greatest gift. If you wish to bless us further, details will be shared here.</p>
+  </section>
 
-    <!-- Kente Bottom Border -->
-    <div class="kente-border kente-bottom"></div>
+  <!-- REGISTRY -->
+  <section id="registry" class="section-block">
+    <h3>Registry</h3>
+    <p>Links to our registry (Amazon, Target, Walmart) will be added here.</p>
+  </section>
 
-    <!-- FOOTER -->
-    <footer>
-      With love, Charity &amp; Kwaku
-    </footer>
-  </div>
+  <!-- RSVP -->
+  <section id="rsvp" class="section-block">
+    <h3>RSVP</h3>
+    <p class="rsvp-intro">
+      We kindly ask that you RSVP to help us prepare for your presence on our special day.
+    </p>
 
-  <!-- COUNTDOWN SCRIPT -->
-  <script>
-    const target = new Date("2026-10-10T12:00:00");
-    const el = document.getElementById("countdown");
+    <form class="rsvp-form" action="https://formsubmit.co/YOUR-EMAIL-HERE" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="Wedding RSVP">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://YOUR-SITE-NAME.netlify.app/thankyou.html">
 
-    function tick() {
-      const now = new Date();
-      const diff = target - now;
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
 
-      if (diff <= 0) {
-        el.textContent = "Today is the big day!";
-        return;
-      }
+      <select name="attendance" required>
+        <option value="">Will you attend?</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
 
-      const d = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
-      const m = Math.floor((diff / (1000 * 60)) % 60);
-      const s = Math.floor((diff / 1000) % 60);
+      <textarea name="message" rows="4" placeholder="Add guests or a message"></textarea>
 
-      el.textContent = `${d} days • ${h} hrs • ${m} min • ${s} sec`;
+      <button type="submit" class="rsvp-btn">Submit RSVP</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    With love, Charity & Kwaku
+  </footer>
+
+</div>
+
+<!-- Floating RSVP Button -->
+<a href="#rsvp" class="floating-rsvp">RSVP</a>
+
+<script>
+  const target = new Date("2026-10-10T12:00:00");
+  const el = document.getElementById("countdown");
+
+  function tick() {
+    const now = new Date();
+    const diff = target - now;
+
+    if (diff <= 0) {
+      el.textContent = "Today is the big day!";
+      return;
     }
 
-    tick();
-    setInterval(tick, 1000);
-  </script>
+    const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const m = Math.floor((diff / (1000 * 60)) % 60);
+    const s = Math.floor((diff / 1000) % 60);
+
+    el.textContent = `${d} days • ${h} hrs • ${m} min • ${s} sec`;
+  }
+
+  tick();
+  setInterval(tick, 1000);
+</script>
+
 </body>
 </html>
+
 
 
