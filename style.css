@@ -23,90 +23,59 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
 
-/* MENU BUTTON (mobile only) */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-text {
+  font-size: 26px;
+  font-weight: bold;
+  background: linear-gradient(to right, #f7d7c4, #f2b8a0);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.logo-ring {
+  width: 28px;
+  height: 28px;
+}
+
+/* MENU */
 .menu-btn {
-  font-size: 30px;
+  font-size: 28px;
   background: none;
   border: none;
   color: #f7d7c4;
   cursor: pointer;
-  display: block;
 }
 
-/* DROPDOWN MENU (mobile default) */
 .dropdown-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background: #1a224d;
-  border-radius: 10px;
-  position: absolute;
-  top: 70px;
-  right: 20px;
-  width: 200px;
   display: none;
-  flex-direction: column;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.5);
-  animation: fadeIn 0.3s ease forwards;
+  list-style: none;
+  padding: 10px;
+  background: #1a224d;
+  border-radius: 8px;
+  position: absolute;
+  right: 20px;
+  top: 70px;
 }
 
 .dropdown-menu.show {
-  display: flex;
+  display: block;
 }
 
 .dropdown-menu li {
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-.dropdown-menu li:last-child {
-  border-bottom: none;
+  margin: 8px 0;
 }
 
 .dropdown-menu a {
-  display: block;
-  padding: 14px;
   color: #f7d7c4;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s ease;
-}
-
-.dropdown-menu a:hover {
-  background: rgba(255,255,255,0.15);
-}
-
-/* DESKTOP / TABLET MENU */
-@media (min-width: 768px) {
-  .menu-btn {
-    display: none;
-  }
-
-  .dropdown-menu {
-    display: flex !important;
-    position: static;
-    flex-direction: row;
-    background: none;
-    box-shadow: none;
-    width: auto;
-    gap: 25px;
-  }
-
-  .dropdown-menu li {
-    border: none;
-  }
-
-  .dropdown-menu a {
-    padding: 0;
-    font-size: 18px;
-  }
-
-  .dropdown-menu a:hover {
-    background: none;
-    color: #f2b8a0;
-  }
 }
 
 /* HERO */
@@ -318,6 +287,7 @@ footer {
     height: 140px;
   }
 }
+
 
 
 
