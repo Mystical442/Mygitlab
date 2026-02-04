@@ -110,7 +110,27 @@ body {
   margin: 0 auto 30px auto;
 }
 
-/* Responsive Auto‑Height Slideshow */
+.event-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 10px 0 15px 0;
+}
+
+.invite-text {
+  margin-top: 10px;
+}
+
+/* Responsive Auto-Height Slideshow */
+.hero-image {
+  margin-top: 20px;
+}
+
+.centered-hero-image {
+  display: flex;
+  justify-content: center;
+}
+
 .slideshow {
   position: relative;
   width: 100%;
@@ -121,12 +141,12 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
-/* Each slide takes the natural height of the image */
+/* Auto-height based on image */
 .slideshow .slide {
   width: 100%;
-  height: auto;              /* auto height based on image */
+  height: auto;
   display: block;
-  object-fit: cover;         /* fills width nicely */
+  object-fit: cover;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -134,7 +154,7 @@ body {
   animation: fadeSlide 25s infinite;
 }
 
-/* Make the first slide visible initially */
+/* First slide visible initially */
 .slide1 {
   position: relative;
   opacity: 1;
@@ -220,25 +240,12 @@ img:hover {
   transform: rotateY(180deg);
 }
 
-/* Info Sections */
-.info-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 10px;
-}
-
-.info-list li {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 12px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  color: #f7d7c4;
-}
-
-.info-list a {
-  color: #f7d7c4;
-  font-weight: bold;
-  text-decoration: underline;
+/* Sections */
+.countdown-section,
+.story-section,
+.gallery-section,
+.rsvp-section {
+  padding: 30px 20px;
 }
 
 /* RSVP Form */
@@ -282,7 +289,10 @@ footer {
 /* Responsive Design */
 @media (min-width: 768px) {
   .hero {
-    padding-top: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
   }
 
   .slideshow {
@@ -307,6 +317,7 @@ footer {
     max-width: 350px;
   }
 }
+
 
 
 
