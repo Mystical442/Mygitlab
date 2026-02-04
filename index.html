@@ -12,30 +12,23 @@
 <div class="page-frame">
 
   <!-- NAVBAR -->
-<header class="navbar">
-  <div class="logo">
-    <span class="logo-text">C & K 2026</span>
-    <img src="Ring.png" class="logo-ring" alt="">
-  </div>
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-text">C & K 2026</span>
+      <img src="Ring.png" class="logo-ring" alt="Wedding Ring">
+    </div>
 
-  <nav class="nav-links">
-    <button class="menu-btn" id="menuToggle">☰</button>
-
-    <ul class="dropdown-menu" id="mobileMenu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#stay">Where to Stay</a></li>
-      <li><a href="#gifting">Gifting</a></li>
-      <li><a href="#registry">Registry</a></li>
-      <li><a href="#rsvp">RSVP</a></li>
-    </ul>
-  </nav>
-</header>
-
-<script>
-  document.getElementById("menuToggle").onclick = function () {
-    document.getElementById("mobileMenu").classList.toggle("show");
-  };
-</script>
+    <nav class="nav-links">
+      <button class="menu-btn" onclick="document.querySelector('.dropdown-menu').classList.toggle('show')">☰</button>
+      <ul class="dropdown-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#stay">Where to Stay</a></li>
+        <li><a href="#gifting">Gifting</a></li>
+        <li><a href="#registry">Registry</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- HERO -->
   <section id="home" class="hero fade-in">
@@ -145,35 +138,23 @@
     </div>
   </section>
 
-      <!-- Where to Stay -->
-      <section id="stay" class="slide-up">
-        <h3>Where to Stay</h3>
-        <ul class="info-list">
-          <li>Delta Hotels by Marriott Chesapeake — 0.5 miles away</li>
-          <li>Hilton Garden Inn Chesapeake — 1 mile away</li>
-          <li>Courtyard by Marriott Chesapeake — 1.2 miles away</li>
-        </ul>
-      </section>
+  <!-- WHERE TO STAY -->
+  <section id="stay" class="section-block">
+    <h3>Where to Stay</h3>
+    <p>Nearby hotel recommendations will be added here for your convenience.</p>
+  </section>
 
-      <!-- Gifting -->
-      <section id="gifting" class="slide-up">
-        <h3>Gifting</h3>
-        <ul class="info-list">
-          <li>Cash gifts are welcome at the event.</li>
-          <li>Zelle: <strong>kwaku.impraim@yahoo.com</strong></li>
-          <li>CashApp: <strong>$YourCashAppName</strong></li>
-        </ul>
-      </section>
+  <!-- GIFTING -->
+  <section id="gifting" class="section-block">
+    <h3>Gifting</h3>
+    <p>Your presence is the greatest gift. If you wish to bless us further, details will be shared here.</p>
+  </section>
 
-      <!-- Registry -->
-      <section id="registry" class="slide-up">
-        <h3>Registry</h3>
-        <ul class="info-list">
-          <li><a href="https://www.amazon.com" target="_blank">Amazon Registry</a></li>
-          <li><a href="https://www.target.com" target="_blank">Target Registry</a></li>
-          <li><a href="https://www.walmart.com" target="_blank">Walmart Registry</a></li>
-        </ul>
-      </section>
+  <!-- REGISTRY -->
+  <section id="registry" class="section-block">
+    <h3>Registry</h3>
+    <p>Links to our registry (Amazon, Target, Walmart) will be added here.</p>
+  </section>
 
   <!-- RSVP -->
   <section id="rsvp" class="section-block">
@@ -240,6 +221,7 @@
 
 </body>
 </html>
+
 
 
 
